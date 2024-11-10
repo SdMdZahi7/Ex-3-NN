@@ -36,6 +36,9 @@ Step 3: Repeat the  iteration  until the losses become constant and  minimum<BR>
 Step 4 : Test for the XOR patterns.
 
 <H3>Program:</H3>
+
+```python
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -104,11 +107,20 @@ test_inputs = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 for test_input in test_inputs:
     prediction = predict(w1, w2, test_input.reshape(2, 1))
     print(f"Input: {test_input} Predicted Output: {prediction}")
+
+```
+
+
 <H3>Output:</H3>
-![image](https://github.com/user-attachments/assets/942301b8-f1bc-4181-a7f6-991a0e0e7671)
-![image](https://github.com/user-attachments/assets/aab013c8-0880-4f4a-ad04-1acfda046cc9)
+
+Plot losses to see how our network is doing
+
+![image](https://github.com/A-Thiyagarajan/Ex-3-NN/assets/118707693/dad8a1a5-f465-44c7-9458-6824fe4cab89)
+
+Test the XOR classification
 
 
+![image](https://github.com/A-Thiyagarajan/Ex-3-NN/assets/118707693/cddd8565-fda1-46e2-b84f-c15eb4ca8ee9)
 
 
 <H3> Result:</H3>
